@@ -1,0 +1,26 @@
+:root{
+    --bg-container:rgba(255, 255, 255, 0.801);
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./img/fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#container{
+    background: var(--bg-container);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#form-title{
+    color: black;
+    font-size: 30px;
+}
+
+#btnRegistrar, #btnBuscar, #btnActualizar, #btnEliminar,#btnGuardarR,#btnAct{
+    margin-right: 10px !important;
+}

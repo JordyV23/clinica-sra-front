@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "MadeRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/MadeRegular.otf");
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.397)),
+    url(img/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#diag{
+  margin-top: 20px !important;
+}
+
+#regForm, #regForm1 {
+  background: rgba(233, 228, 228, 0.726);
+  border-radius: 5px;
+  margin: 0px auto;
+  padding: 40px;
+  text-align: center;
+}
+h1 {
+  font-family: serif !important;
+}
+
+.btn {
+  font-size: 20px !important;
+  font-family: serif !important;
+  margin: 15px !important;
+}
+.btn:hover {
+  font-size: 18px !important;
+}

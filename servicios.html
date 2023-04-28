@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica SRA | Servicios</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" />
+    <!-- Estilos -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand hvr-float" href="#">
+                <img src="./public/img/logo.png" alt="..." height="60">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu""">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link button hvr-grow">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./servicios.html" class="nav-link button hvr-grow">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./promociones.html" class="nav-link button hvr-grow">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link button hvr-grow">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contactenos.html" class="nav-link button hvr-grow">Contactenos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navmenu""">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link button hvr-grow">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./registro.html" class="nav-link button hvr-grow" id="register">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Banner Servicios -->
+    <div id="nosotros" data-aos="fade-up">
+        <div class="container d-flex align-items-center" id="nosotros-heading">
+            <div class="box">
+                <h1>Contamos con una Amplia Variedad de Servicios Medicos</i></h1>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Servicios -->
+
+    <!-- Servicios Medicos -->
+    <div class="container">
+        <div class="container">
+            <!-- Fila 1 -->
+            <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up">
+                <div class="col mb-4 mt-5">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/cirugia.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cirugías</h5>
+                                    <p class="card-text">Realizamos cirugías por cirujanos altamente capacitados en
+                                        instalaciones modernas y seguras.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4 mt-5">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/espMedicas.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Especialidades Médicas</h5>
+                                    <p class="card-text">Tenemos una amplia variedad de especialidades médicas:
+                                        cardiología, neurología, dermatología, gastroenterología y más, con
+                                        técnicas avanzadas para diagnosticar y tratar una variedad de enfermedades.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up">
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/planPrev.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquetes Preventivos</h5>
+                                    <p class="card-text">Opciones de paquetes preventivos que incluyen pruebas
+                                        de diagnóstico y análisis clínicos para evaluar la salud general y detectar
+                                        cualquier problema médico temprano.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/fotona.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fotona</h5>
+                                    <p class="card-text">Servicios de Fotona utilizando tecnología de láser de
+                                        última generación para proporcionar una solución no invasiva y eficaz para una
+                                        variedad de condiciones médicas.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Fila 3 -->
+            <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up">
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/maternidad.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Planes de Maternidad</h5>
+                                    <p class="card-text">Asistimos mujeres para prepararse para
+                                        el embarazo, el parto y la recuperación postparto, incluyendo asesoramiento,
+                                        atención prenatal y postnatal y clases de educación.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <video src="./public/img/servicios/visita.mp4" class="img-fluid rounded-start"
+                                    onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Visitas Especiales</h5>
+                                    <p class="card-text">Visitas especializadas para pacientes con afecciones
+                                        médicas crónicas o complejas, con pruebas de diagnóstico y seguimiento para
+                                        garantizar la atención médica adecuada.</p>
+                                    <a href="#" class="btn btn-primary btn-servicios">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Fila 4 -->
+            <!-- <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up">
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./public/img/about/medico2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de la tarjeta</h5>
+                                    <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a
+                                        continuación como introducción natural a contenido adicional. Este contenido es
+                                        un poco más largo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./public/img/about/medico2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de la tarjeta</h5>
+                                    <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a
+                                        continuación como introducción natural a contenido adicional. Este contenido es
+                                        un poco más largo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+
+
+            <!-- Fila 5 -->
+            <!-- <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up">
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./public/img/about/medico2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de la tarjeta</h5>
+                                    <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a
+                                        continuación como introducción natural a contenido adicional. Este contenido es
+                                        un poco más largo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./public/img/about/medico2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de la tarjeta</h5>
+                                    <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a
+                                        continuación como introducción natural a contenido adicional. Este contenido es
+                                        un poco más largo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+    <!-- Servicios Medicos -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted mt-5" data-aos="fade-up">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span id="footer-span">Siguenos en nuestras redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 hvr-grow"
+                    href="https://www.facebook.com/HospitalSanRafaelArcangel/" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-facebook" id="footer-icon"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 hvr-grow"
+                    href="https://www.youtube.com/channel/UCYDJYg8oEq4Gu_gg2p3NF-g" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-youtube" id="footer-icon"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1 hvr-grow"
+                    href="https://www.instagram.com/hospitalsanrafaelarcangel/" role="button"
+                    data-mdb-ripple-color="dark"><i class="bi bi-instagram" id="footer-icon"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 hvr-grow">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="./public/img/logo.png" alt="..." height="60">
+                        </h6>
+                        <p>
+                            Al servicio de nuestros pacientes las 24 horas del dia, los 7 dias de la semana, durante
+                            todo el año.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Enlaces
+                        </h6>
+                        <p>
+                            <a href="./index.html" class="text-reset button hvr-grow">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="./servicios.html" class="text-reset button hvr-grow">Servicios</a>
+                        </p>
+                        <p>
+                            <a href="./promociones.html" class="text-reset button hvr-grow">Promociones</a>
+                        </p>
+                        <p>
+                            <a href="./about.html" class="text-reset button hvr-grow">Nosotros</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> Av. Central, Calle 3, Liberia, Guanacaste,
+                            Costa Rica
+
+                            100 m este, 25 m sur de la Escuela
+
+                            Ascención Esquivel.</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@clinicasra.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> 2690-5500</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright Clinca San Rafael Arcangel
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/8633cf8400.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- Scripts -->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="public/style.css" />
+    </head>
+  <body>                  
+    <div class="form">
+      <div class="formLog" id="form1">
+        <div class="logo">
+          <h1>Bienvenido</h1>
+          <img src="public/img/logo3.png"/>
+        </div>
+        <br/>
+        <div class="login">
+          <label  class="lblEmail" id="LblEmailL">
+            <i class="fa-solid fa-user"></i>
+            <input id="email"
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            /><br />
+          </label>
+          <br />
+          <label class="lbl">
+            <i class="fa-solid fa-lock"></i>
+            <input id="password"
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Password" 
+            />
+            <i id="eye" class="fa-solid fa-eye-slash"></i>
+          </label>
+          <div id="links">
+            <a id="p1" href="./recuperarPassword.html"><p>Olvido su contraseña?</p></a>
+            <a id="p2" href="./registro.html"><p>Desea registrarse?</p></a>
+          </div>
+          <a href="" id="btnLogin"><input id="iniciar" class="btn" type="button" value="Iniciar Sesión" /></a>
+          <div>
+            <label id="btnLabel">
+              <h3>Iniciar Sesión Con:</h3>
+              <a id="btnGoogle" href=""><i><img src="public/img/google.png" alt=""></i></a>
+          </label>
+          <br>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/8633cf8400.js" crossorigin="anonymous"></script>
+  <script src="public/js/javaLogin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

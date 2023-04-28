@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'MadeRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./public/fonts/MadeRegular.otf');
+}
+
+:root {
+    --body-bg: #34495e;
+    --navbar-bg: white;
+    --historia-container-bg: #f9f9f9;
+    --mv-container-bg: white;
+    --a-fc: #113c5a;
+    --a-fc-h: #3679a8;
+    --foter-bg: white;
+}
+
+body {
+    font-family: 'MadeRegular' !important;
+    background: var(--body-bg) !important;
+    /* 34495e */
+}
+
+nav {
+    /* #34495e */
+    /* #2196F3 */
+    background: var(--navbar-bg) !important;
+}
+
+a {
+    color: var(--a-fc) !important;
+}
+
+a:hover {
+    font-weight: bold;
+    color: var(--a-fc-h) !important;
+}
+
+span {
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+#register {
+    background-color: #34495e;
+    border-radius: 15px;
+    color: white !important;
+}
+
+#textoCarousel {
+    color: black;
+}
+
+.carousel-captions {
+    background-color: #3679a8ad;
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.card {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+    z-index: 999;
+}
+
+footer {
+    background: var(--foter-bg);
+}
+
+#footer-span {
+    font-size: 20px;
+}
+
+#footer-icon {
+    font-size: 30px;
+}
+
+/* #63b3ed */
+/* #2b6cb0 */
+/* #2a4365 */
+
+/* About */
+#nosotros {
+    margin-top: 85px !important;
+    color: white;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='37' height='37' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(17, 89, 141,1)'/%3E%3Cpath d='M7.3 7.3a 12.7 12.7 0 0 1 25.4 0a 12.7 12.7 0 0 1 0 25.4a 12.7 12.7 0 0 1-25.4 0a 12.7 12.7 0 0 1 0-25.4M10 17a 3 3 0 0 0 0 6a 7 7 0 0 1 7 7a 3 3 0 0 0 6 0a 7-7 0 0 1 7-7a 3 3 0 0 0 0-6a-7-7 0 0 1-7-7a 3 3 0 0 0-6 0a-7 7 0 0 1-7 7z' fill='rgba(43, 108, 176,1)' filter='url(%23filter-doodad-1)'/%3E%3Cpath d='M7.9 7.9a 12.1 12.1 0 0 1 24.2 0a 12.1 12.1 0 0 1 0 24.2a 12.1 12.1 0 0 1-24.2 0a 12.1 12.1 0 0 1 0-24.2M10 17a 3 3 0 0 0 0 6a 7 7 0 0 1 7 7a 3 3 0 0 0 6 0a 7-7 0 0 1 7-7a 3 3 0 0 0 0-6a-7-7 0 0 1-7-7a 3 3 0 0 0-6 0a-7 7 0 0 1-7 7z' fill='rgba(42, 67, 101,1)' filter='url(%23filter-doodad-2)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-1'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='3.4'/%3E%3C/filter%3E%3Cfilter id='filter-doodad-2'%3E%3CfeGaussianBlur in='SourceGraphic' stdDeviation='1.6'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+}
+
+#nosotros-heading {
+    height: 110px !important;
+}
+
+.img-about {
+    width: 70%;
+}
+
+.container-historia {
+    background-color: var(--historia-container-bg);
+}
+
+.p-historia {
+    color: #696969;
+}
+
+.container-mv {
+    background-color: var(--mv-container-bg);
+}
+
+/* Servicios */
+.card-title {
+    font-weight: bold !important;
+    color: #113c5a !important;
+}
+
+.btn-servicios{
+    color: white !important;
+    background: #113c5a !important;
+    border: 0 !important;
+}
+
+/* Contactenos */
+
+#contactenos-container{
+    background: white;
+    border-radius: 15px;
+}
+
+/* Promociones */
+#promociones-container{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.text-promociones{
+    color: #113c5a !important;
+}
+
+.cupon{
+    border-radius: 30px !important;
+}
+
+.imagenCupon{
+    border-radius: 30px 30px 0 0;
+}
+
+.btn-descuentos{
+    color: white !important;
+    background-color: #113c5a !important;
+}
+
+.btn-descuentos:hover{
+    color: #3ac7ff !important;
+}

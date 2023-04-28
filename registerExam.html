@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica SRA | Examenes</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./public/stylesRegistroExam.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"
+    />
+
+    <!-- Table -->
+    <link
+      href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.4/date-1.4.0/r-2.4.1/sc-2.1.1/datatables.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="row mt-5 justify-center mx-3" id="main">
+      <div class="col-6 my-auto mx-auto" id="container">
+        <h1 class="text-center" id="form-title">Examenes de Sangre</h1>
+
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="hemoglobina"
+                  id="hemoglobina"
+                />
+
+                <label class="fw-bold" for="hemoglobina"
+                  > Hemoglobina
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="hematocrito"
+                  id="hematocrito"
+                />
+
+                <label class="fw-bold" for="hematocrito"
+                  > Hematocrito
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="trigliceridos"
+                  id="trigliceridos"
+                />
+
+                <label class="fw-bold" for="trigliceridos"
+                  > Trigliceridos
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="colesterolTotal"
+                  id="colesterolTotal"
+                />
+
+                <label class="fw-bold" for="colesterolTotal"
+                  > Colesterol Total
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="acidoUrico"
+                  id="acidoUrico"
+                />
+
+                <label class="fw-bold" for="acido urico"
+                  > Acido Urico
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="creatinina"
+                  id="creatinina"
+                />
+
+                <label class="fw-bold" for="creatinina"
+                  > Creatinina
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-4 my-auto mx-auto" id="container">
+        <h1 class="text-center" id="form-title">Examen de Orina</h1>
+
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="glucosa"
+                  id="glucosa"
+                />
+                <label class="fw-bold" for="glucosa">Glucosa </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="eritrocitos"
+                  id="eritrocitos"
+                />
+                <label class="fw-bold" for="glucosa"> Eritrocitos </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="color"
+                  id="color"
+                />
+                <label class="fw-bold" for="color"> Color </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3 form-control-md"
+                  name="leucocitos"
+                  id="leucocitos"
+                />
+                <label class="fw-bold" for="leucocitos"> Leucocitos </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container mt-3 d-flex justify-content-center">
+        <button type="button" id="btnVal" class="btn btn-dark">
+          Validar
+        </button>
+        <button type="button" id="btnRE" class="btn btn-dark">
+          Registrar
+        </button>
+      </div>
+    </div>
+    <script src="./public/js/javaExamenes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8633cf8400.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.4/date-1.4.0/fc-4.2.2/r-2.4.1/sc-2.1.1/sp-2.1.2/datatables.min.js"></script>
+  </body>
+</html>

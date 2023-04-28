@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+* body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.397)),
+    url(img/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: serif;
+}
+.logo img {
+  width: 338px;
+  height: 100px;
+  margin: 15px;
+}
+.formLog {
+  width: 370px;
+  height: 0%;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  float: left;
+  background: rgba(233, 228, 228, 0.726);
+  border-radius: 5px;
+}
+
+#password {
+  width: 268px;
+}
+#email {
+  width: 290px;
+}
+#ingrese {
+  text-align: left;
+  margin-left: 26px;
+}
+
+.form {
+  margin-top: 70px;
+  margin-left: 510px;
+}
+#links {
+  margin: 5px;
+}
+#links a {
+  text-decoration: none;
+  color: #0000ff;
+  transition: 0.1s;
+}
+
+#links a:hover {
+  font-size: 15px;
+}
+
+#links #p1 p {
+  margin-left: 191px;
+}
+#links #p2 p {
+  margin-left: 219px;
+}
+
+.input {
+  background: none;
+  width: 315px;
+  padding-top: 20px;
+  border: none;
+  color: #191919;
+  outline: 0px;
+  border-bottom: 2px solid rgb(3, 3, 3);
+}
+label img {
+  width: 25px;
+  height: 25px;
+}
+h1 {
+  color: black;
+  font-family: serif;
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.btn {
+  background: #34495e;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 18px;
+  border-radius: 4px;
+  color: rgb(255, 254, 254);
+  font-size: 18px;
+  font-family: serif;
+}
+.btn:hover {
+  font-size: 15px;
+}
+
+#ant {
+  margin: 30px;
+  padding: 7px 17px;
+}
+#sig {
+  margin: 30px;
+  padding: 7px 17px;
+}
+#form #form3 {
+  height: 300px;
+}
