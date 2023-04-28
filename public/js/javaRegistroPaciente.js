@@ -225,6 +225,7 @@ btnGuardarR.addEventListener("click", async (e) => {
     });
   habiliatBTN(false);
   abailitar(true);
+  vaciar()
   document.querySelector("#btnGuardarR").disabled = true;
   document.querySelector("#btnGuardarR").style.display = "none";
   document.querySelector("#btnRegistrar").disabled = false;
@@ -286,6 +287,7 @@ eliminar.addEventListener("click", async (e) => {
       console.log(result);
       window.alert("No se encontro el paciente.");
     });
+    vaciar()
 });
 
 actualizar.addEventListener("click", async (e) => {
@@ -344,5 +346,23 @@ btnAct.addEventListener("click", async (e) => {
       window.alert("No se pudo guardar el registro");
     });
   abailitar(true);
+  vaciar()
   document.querySelector("#btnAct").style.display = "none";
 });
+
+function vaciar() {
+  document.querySelector("#identificacion").value ="";
+  document.querySelector("#nombre").value ="";
+  document.querySelector("#peso").value ="";
+  document.querySelector("#edad").value ="";
+  document.querySelector("#altura").value ="";
+  document.querySelector("#enfermedades").value ="";
+  document.querySelector("#tipoSangre").value ="";
+  document.querySelector("#medicamentosAlergicos").value ="";
+  document.querySelector("#nombreCompleto").value ="";
+  document.querySelector("#relacion").value ="";
+  document.querySelector("#telefono").value ="";
+  document.querySelector("#direccion").value ="";
+  document.querySelector("#apellidos").value ="";
+  document.querySelector("#presion").value ="";
+}

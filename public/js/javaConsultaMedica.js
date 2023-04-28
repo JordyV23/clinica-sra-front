@@ -56,6 +56,7 @@ btn.addEventListener("click", async (e) => {
       const { data } = response;
       window.alert("Error al actualizar la consulta");
     });
+    aliminarHijos()
 });
 
 btnG.addEventListener("click", async (e) => {
@@ -78,14 +79,15 @@ btnG.addEventListener("click", async (e) => {
     )
     .then((result) => {
       const { data } = result;
-      window.alert("Consulta Actualizada");
+      window.alert("Diagnostico Actualizado");
     })
     .catch((result) => {
       console.log(result);
       const { response } = result;
       const { data } = response;
-      window.alert("Error al actualizar la consulta");
+      window.alert("Error al actualizar el diagnostico");
     });
+    aliminarHijos2()
 });
 
 function validadUser() {
@@ -140,7 +142,7 @@ btnB.addEventListener("click", async (e) => {
         document.querySelector("#presion").value = consulta.presion;
         document.querySelector("#peso").value = consulta.peso;
         document.querySelector("#altura").value = consulta.altura;
-        document.querySelector("#fechaConsulta").value = "";
+        document.querySelector("#fechaConsulta").value = '';
         document.querySelector("#sintomas").value = consulta.sintomas;
       }
     })
@@ -151,3 +153,18 @@ btnB.addEventListener("click", async (e) => {
       window.alert("No se encontro el paciente.");
     });
 });
+
+function aliminarHijos() {
+  document.querySelector("#presion").value ="";
+  document.querySelector("#peso").value =""
+  document.querySelector("#altura").value =""
+  document.querySelector("#fechaConsulta").value =""
+  document.querySelector("#sintomas").value =""
+  document.querySelector("#nombrePaciente").value =""
+  document.querySelector("#cedula").value =""
+}
+function aliminarHijos2() {
+  document.querySelector("#medicamentos").value ="";
+  document.querySelector("#diagnostico").value =""
+}
+

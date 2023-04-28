@@ -9,18 +9,16 @@ validarS(true);
 btnV.addEventListener("click", async (e) => {
   e.preventDefault();
   await axios(
-    "https://clinica.onrender.com/consultas/get/"+localStorage.getItem(
-      "dato"
-    )
+    "https://clinica.onrender.com/consultas/get/" + localStorage.getItem("dato")
   )
     .then((result) => {
       const { data } = result;
       let examen = data.consulta.examenes;
-      if (examen[0].orina === "si") {
+      if (examen[0].orina === "Si") {
         validarO(false);
         orina = "Si";
       }
-      if (examen[0].sangre === "si") {
+      if (examen[0].sangre === "Si") {
         validarS(false);
         sangre = "Si";
       }
@@ -36,9 +34,8 @@ btnRE.addEventListener("click", async (e) => {
   if (orina === "Si") {
     await axios
       .post(
-        `https://clinica.onrender.com/examenes/registrarExamen/orina/?cedula=${localStorage.getItem(
-          "cedulaP"
-        )}`,
+        "https://clinica.onrender.com/examenes/registrarExamen/orina/?cedula=" +
+          localStorage.getItem("cedulaP"),
         {
           fechaRealizado: new Date(),
           glucosa: document.querySelector("#glucosa").value,
@@ -53,9 +50,11 @@ btnRE.addEventListener("click", async (e) => {
         }
       )
       .then((result) => {
-        console.log(result)
+        console.log(result);
         const { data } = result;
+        console.log(data);
         window.alert("Examenes de sangre Registrado");
+        validarO(true)
       })
       .catch((result) => {
         console.log(result);
@@ -86,8 +85,11 @@ btnRE.addEventListener("click", async (e) => {
         }
       )
       .then((result) => {
+        console.log(result);
         const { data } = result;
+        console.log(data);
         window.alert("Examenes de orina Registrado");
+        validarS(true) 
       })
       .catch((result) => {
         console.log(result);
@@ -96,6 +98,7 @@ btnRE.addEventListener("click", async (e) => {
         window.alert("Error al registrar los examenes");
       });
   }
+  aliminarHijos()
 });
 
 function validarS(params) {
@@ -111,4 +114,17 @@ function validarO(params) {
   document.querySelector("#color").disabled = params;
   document.querySelector("#leucocitos").disabled = params;
   document.querySelector("#eritrocitos").disabled = params;
+}
+
+function aliminarHijos() {
+  document.querySelector("#hemoglobina").value ="";
+  document.querySelector("#hematocrito").value =""
+  document.querySelector("#trigliceridos").value =""
+  document.querySelector("#colesterolTotal").value =""
+  document.querySelector("#acidoUrico").value =""
+  document.querySelector("#creatinina").value =""
+  document.querySelector("#glucosa").value =""
+  document.querySelector("#color").value =""
+  document.querySelector("#leucocitos").value =""
+  document.querySelector("#eritrocitos").value =""
 }

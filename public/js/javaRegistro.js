@@ -194,4 +194,15 @@ btn.addEventListener("click", async (e) => {
       const { data } = response;
       window.alert("No se pudo realizar el registro.");
     });
+  vaciar();
 });
+
+function vaciar() {
+  (document.querySelector("#cedula").value = ""),
+    (document.querySelector("#nombre").value = ""),
+    (document.querySelector("#apellidos").value = ""),
+    (document.querySelector("#correo").value = ""),
+    (document.querySelector("#password").value = ""),
+    (document.querySelector("#telefono").value = ""),
+    (document.querySelector("#Fecha_nacimiento").value = "");
+}

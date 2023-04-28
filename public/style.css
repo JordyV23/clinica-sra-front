@@ -107,3 +107,8 @@ h1 {
 #form #form3 {
   height: 300px;
 }
+
+#g_id_onload,#user{
+  margin: 10px;
+  margin-left: 70px;
+}
